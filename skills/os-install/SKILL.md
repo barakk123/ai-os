@@ -36,7 +36,7 @@ if you cannot find it, ask the owner for the ai-os checkout path.
      (skip if its heading already exists).
    - Seed any knowledge doc it needs (e.g. `GLOSSARY.md` for `shared-language`) from its template.
 4. **Record it.** Create or update `ai-os.lock` at the project root - the ai-os version, the `source:`
-   checkout path, and the installed-module list (+ tier). Append the newly-installed modules.
+   checkout path, and the installed-module list (+ tier + version, read from each module's manifest). Append the newly-installed modules.
 5. **Self-verify.** Run `/os-doctor` and carry its GREEN/ISSUES result into the report; fix any miss now.
 
 ## Report

@@ -9,6 +9,7 @@
 Soft-deps: `shared-language` (the coin-it reflex writes proposals there).
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: core            # core | heavy
 deps: { hard: [], soft: [shared-language] }
 tiers: [single]       # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

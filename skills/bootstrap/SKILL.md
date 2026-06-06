@@ -346,7 +346,7 @@ never hand-edited.
 Prove the layer is intact and give the owner a definite GREEN, not a guess, BEFORE committing.
 
 - **Write `ai-os.lock`** at the project root: the ai-os version, the `source:` checkout path used, the
-  chosen profile + source-mode, and the installed-module list (+ tier each). This is the record that
+  chosen profile + source-mode, and the installed-module list (+ tier + version each, read from each module's manifest). This is the record that
   `os-doctor` and future `os-install` runs read to know what is present.
 - **Run `/os-doctor`** (or its checks inline): for every installed module confirm its install block is
   in `CLAUDE.md`, its templates are at their target paths, its `ai-os:manifest` hard-deps are installed,

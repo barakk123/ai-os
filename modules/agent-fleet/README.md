@@ -14,6 +14,7 @@
 - `standalone` otherwise - the lite tier (two review roles run as a checklist) works with nothing else installed
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: heavy           # core | heavy
 deps: { hard: [], soft: [source-of-truth, gates, state-docs, handoff] }
 tiers: [lite, full]   # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

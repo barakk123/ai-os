@@ -18,6 +18,7 @@
 - Soft: `handoff` — this module triggers and consumes the per-stage independent-review brief.
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: heavy           # core | heavy
 deps: { hard: [], soft: [source-of-truth, gates, tracker, handoff] }
 tiers: [lite, full]   # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

@@ -7,6 +7,7 @@
 **Dependencies:** `standalone`.
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: core            # core | heavy
 deps: { hard: [], soft: [] }
 tiers: [single]       # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

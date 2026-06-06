@@ -10,6 +10,7 @@ Soft-deps (the Project-Knowledge family, all referenced - never owned - by state
 ledger), `handoff` (`HANDOFF.md`, the episodic warm-start brief), `doc-hygiene` (semantic line breaks).
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: core            # core | heavy
 deps: { hard: [], soft: [memory, tracker, handoff, doc-hygiene] }
 tiers: [single]       # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

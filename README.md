@@ -123,8 +123,9 @@ Invoke each as `/<name>` once it is in your `.claude/skills/`.
 
 ## Versioning
 
-One version for the repo (`v0.1`, `v0.2`, ...); each module notes "since vX".
-A consuming project records what it pulled in `ai-os.lock`.
+One version for the repo (`v0.1`, `v0.2`, ...). Each module notes "since vX" and carries a `version`
+in its manifest that bumps when its content changes.
+A consuming project records what it pulled - modules + their versions - in `ai-os.lock`.
 
 ## Provenance
 

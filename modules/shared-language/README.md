@@ -9,6 +9,7 @@ Soft-deps: `mutual-push` (its coin-it reflex proposes new tokens);
 `tracker` (optional, if you log proposals before sealing).
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: core            # core | heavy
 deps: { hard: [], soft: [mutual-push, tracker] }
 tiers: [single]       # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

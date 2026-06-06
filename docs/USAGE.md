@@ -215,8 +215,9 @@ You did two commands and got a verified, coherent layer - tailored to a client r
 
 ## 11. The manifests (for the curious / for tooling)
 
-- **`<!-- ai-os:manifest -->`** (each module README) - `tier` (core/heavy), `deps: { hard, soft }`,
-  `tiers` (e.g. `[lite, full]`). The installers read this to resolve dependencies and order installs.
+- **`<!-- ai-os:manifest -->`** (each module README) - `version` (semver, bumps on content change),
+  `tier` (core/heavy), `deps: { hard, soft }`, `tiers` (e.g. `[lite, full]`). The installers read this to
+  resolve dependencies, order installs, and record each installed module's version in `ai-os.lock`.
 - **`<!-- ai-os:profile -->`** (each profile) - the `core` list, the `heavy` modules + their chosen tier,
   and `deferred` / `excluded`. The bootstrap reads this to know the bundle.
 

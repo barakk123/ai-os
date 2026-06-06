@@ -11,6 +11,7 @@ them), `gates` (Gate 7 - the Per-Stage Independent-Review gate - is what fires a
 `git-dev-push` (the commit convention used by the pack commit).
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: core            # core | heavy
 deps: { hard: [], soft: [state-docs, memory, tracker, gates, sync, mutual-push, git-dev-push, source-of-truth, doc-hygiene] }
 tiers: [single]       # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]

@@ -14,6 +14,7 @@ module's sub-spec extraction).
 Owns the `spec-developer` skill (the interview that matures a rough spec to **derivable**).
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: heavy            # core | heavy
 deps: { hard: [], soft: [state-docs, agent-fleet, tracker] }
 tiers: [authored-spec, external-monorepo, hybrid-greenfield]

@@ -14,6 +14,7 @@ two completeness gates - referenced, never re-defined);
 `test-program` (enables the conditional gates: regression-coverage + the empirical "done" ledger).
 
 <!-- ai-os:manifest
+version: 0.1.0        # bumps (semver) when this module's content changes; absence is fine (older installs have none)
 tier: core            # core | heavy
 deps: { hard: [], soft: [tracker, agent-fleet, source-of-truth, handoff, test-program] }
 tiers: [single]       # [single]  OR  [lite, full]  OR named e.g. [authored-spec, external, hybrid]
