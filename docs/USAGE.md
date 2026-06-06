@@ -5,6 +5,28 @@ and confirm it works. If the [README](../README.md) is the 30-second front door,
 
 ---
 
+## 0. Start here - the guided paste (recommended)
+
+The fastest way in: let ai-os onboard you. Two copy-paste steps, no manual file-wrangling.
+
+**1. In a chat in your project, paste this:**
+
+```text
+Set up the ai-os helper in THIS project - do only this, nothing else:
+1. If an ai-os checkout isn't already reachable, clone https://github.com/barakk123/ai-os.git OUTSIDE this project (a sibling folder or ~/tools/ai-os), read-only, and note its ABSOLUTE path.
+2. Install ONLY the helper skill: copy `skills/ai-os-helper/` from the checkout into this project's `.claude/skills/ai-os-helper/`. Install nothing else; do NOT modify my CLAUDE.md - no convention is activated by this step.
+3. Confirm `.claude/skills/ai-os-helper/SKILL.md` exists.
+4. Then tell me to OPEN A FRESH CHAT (so the /ai-os-helper command loads), and print EXACTLY the following line for me to paste there, with <AI-OS-PATH> replaced by the checkout's absolute path from step 1:
+
+   /ai-os-helper Set up ai-os for THIS project. The ai-os checkout is at <AI-OS-PATH>; use it as your source of truth. Run your full audit-first setup and install only what I approve.
+```
+
+It clones ai-os, installs only the helper skill, and prints a one-line prompt for you to paste in a **fresh chat**. That second prompt runs the helper (now a real skill), which audits your project by capability against the current modules and installs only what you approve - never overwriting your own content.
+
+The sections below are the deeper reference and the manual paths (by hand, a-la-carte, whole-profile) for when you want them.
+
+---
+
 ## 1. The mental model
 
 Four kinds of thing, that is all:

@@ -4,6 +4,8 @@ The single readable map of everything in ai-os: every module, profile, and skill
 gives you, its tier, and its dependencies. This is the knowledge base the `/ai-os-helper` concierge
 reads, and a quick reference for humans.
 
+> **New to ai-os?** Start with the paste-prompt at the top of the [README](README.md) - it onboards you end to end. This catalog is the reference map.
+
 > The machine-readable source of truth for tiers + dependencies is each module's `<!-- ai-os:manifest -->`
 > block (and each profile's `<!-- ai-os:profile -->` block) - the installers read those. This catalog
 > mirrors them in readable form; if they ever disagree, the manifest wins (regenerate this).

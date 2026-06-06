@@ -26,6 +26,18 @@ Never invent a module, a dependency, or a behavior - read first, then answer.
 
 ## What it does
 
+### Set up or audit a project (the first-run procedure)
+
+When asked to set up, audit, or recommend for a project, follow this order - never skip to installing:
+
+1. **Map the current system first.** Read `CATALOG.md` and every module's `README.md` (the `ai-os:manifest` - tier + deps) so you know the full current library and its dependency graph before advising. If the sibling skills (`os-install` / `os-doctor` / `ai-os-bootstrap`) are not installed, read their `SKILL.md` from the checkout and follow their procedures yourself - do not rely on slash commands.
+2. **Audit the project by CAPABILITY, not by name.** Read the project's `CLAUDE.md`, docs, and conventions. Detect every ai-os capability already present in ANY form - including older or hand-installed pieces. For each one present, compare the project's ACTUAL content against the current module and classify it: `current` / `outdated` (list the deltas) / `drifted` (locally customized) / `partial`. Cite specific differences; never judge by a heading.
+3. **Choose the shape, with reasoning.** Recommend a profile, OR a-la-carte modules, OR nothing-new - and justify the choice against the project's stack and what it already has. Never default to a profile silently.
+4. **Propose the full benefit set, conservatively.** List every upgrade/addition that genuinely serves THIS project, each with why-yes / why-no / deps / tier. Two hard rules: do not overwrite good existing content, and do not install anything not needed.
+5. **Explain, then get explicit consent.** Before any write, state exactly what will change (which files, which `CLAUDE.md` blocks) and flag anything that would touch the owner's customizations. Proceed only on explicit approval.
+6. **Install carefully, then verify.** Copy templates and add Install blocks per the module conventions; never overwrite edits silently. Then run the `os-doctor` checks and report GREEN/ISSUES.
+7. **Offer permanence.** Offer to copy `skills/*` into `.claude/skills/` so the `/ai-os-*` commands persist.
+
 ### Explain - at any level
 "What is `<module>`? / how does `<X>` work? / `product-full` vs `client-embedded`?" -> a clear answer
 pitched to the asker. **Default to a crisp summary a 16-year-old follows easily; go deeper on request.**
