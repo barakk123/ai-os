@@ -1,0 +1,29 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Node / tooling (added later if installers are built)
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Env / secrets - never commit
+.env
+.env.*
+
+# Temp
+*.tmp
+.cache/
+
+# Repo-developer-only docs - kept LOCAL, never published
+# (decisions log, internal findings ledger, build changelog)
+/CHANGELOG.md
+/docs/TRACKER.md
+/docs/design/
